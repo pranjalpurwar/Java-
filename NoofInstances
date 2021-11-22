@@ -1,0 +1,39 @@
+class Test
+{
+    static  private int count=0;
+    private int n;
+    Test()
+    {
+        n=0;
+        count++;
+    }
+
+    void setNum(int n)
+    {
+        this.n = n;
+
+    }
+
+    void getNum()
+    {
+        System.out.println("NUM : "+ n);
+    }
+
+    static void getCount()
+    {
+        System.out.println("No. of instance created: "+ count);
+    }
+
+}
+
+public class NoofInstances {
+    public static void main(String[] args) {
+        Test t =  new Test();
+        Test t1 = new Test();
+        Test t2 = new Test();
+        Test t3 = new Test();
+        Test t4 = new Test();
+        Test.getCount();
+    }
+
+}
