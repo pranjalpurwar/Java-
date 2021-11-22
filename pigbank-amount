@@ -1,0 +1,30 @@
+class PigBank
+{
+    private int amount;
+
+    PigBank()
+    {
+        amount=50;
+    }
+
+    PigBank(int amount)
+    {
+        this.amount +=amount;
+    }
+
+    public void getAmount()
+    {
+        System.out.println("Balance: "+ amount);
+    }
+}
+
+public class Amount {
+
+    public static void main(String[] args) {
+        PigBank p1 = new PigBank();
+        PigBank p2 = new PigBank(150);
+        p1.getAmount();
+        p2.getAmount();
+    }
+}
+
