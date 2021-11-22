@@ -29,9 +29,9 @@ public class Topper
     public static void main(String[] args) {
         Student[] arr = new Student[3];
 
-        arr[0] = new Student("Rajat Rajput",99);
-        arr[1] = new Student("Sarthak Prajapati", 98);
-        arr[2] = new Student("Kishna Tishna",95);
+        arr[0] = new Student("Pranjal Purwar",99);
+        arr[1] = new Student("Raj Kumar", 98);
+        arr[2] = new Student("Rohit Saxena ",95);
 
         Student.topper(arr);
     }
